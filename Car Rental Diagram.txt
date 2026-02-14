@@ -1,0 +1,54 @@
++------------------------+
+|          User          |
+|------------------------|
+| username               |
+| location               |
++-----------+------------+
+            |
+            v
++-------------------------------+
+|      UserVehicleManager       |
+|-------------------------------|
+| user_bookings : Map           |
+|-------------------------------|
+| bookVehicle()                 |
+| rentVehicle()                 |
+| returnVehicle()               |
++---------------+---------------+
+                |
+                v
++--------------------------------------+
+|    VehicleBookRentManager            |
+|--------------------------------------|
+| booking_records : Map                |
+| vehicle_manager : VehicleManager     |
+|--------------------------------------|
+| createBooking()                      |
+| rentVehicle()                        |
+| returnVehicle()                      |
+| showBookings()                       |
++---------------+----------------------+
+                |
+                v
++-------------------------------+
+|        VehicleManager         |
+|-------------------------------|
+| vehicle_loc_hashmap : Map     |
+|-------------------------------|
+| addVehicle()                  |
+| getVehicles(location)         |
++---------------+---------------+
+                |
+      ---------------------------
+      |                         |
+      v                         v
++-------------+        +----------------+
+|   Vehicle   |        |    Booking     |
+|-------------|        |----------------|
+| name        |        | booking_id     |
+| plate_no    |        | username       |
+| location    |        | vehicle_name   |
+| isAvailable |        | plate_number   |
++-------------+        | location       |
+                       | status         |
+                       +----------------+
