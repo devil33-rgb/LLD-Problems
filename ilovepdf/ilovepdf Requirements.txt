@@ -1,0 +1,7 @@
+To Design ilovepdf like system it should be able to :
+1. Upload of PDf 
+2. Pdf operations ( Split, merge , watermark , edit, conversion)
+3. Process File 
+
+What it does
+Upload PDF → process (compress, split, merge, watermark) → store → return.
